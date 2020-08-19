@@ -573,7 +573,7 @@ distros = {
     "ubuntu": iUbuntu,
     "opensuseleap": iOpenSuseLeap,
     "arch": iArch,
-    "archo" iArcoLinux
+    "archo": iArcoLinux
     "artix": iArtix,
     "fedora": iFedora,
     "void": iVoid,
@@ -635,6 +635,7 @@ terminals = {
     "cool-retro-term": Coolretroterm,
     "urxvt": Urxvt,
     "xfce4-terminal": Xfce4_terminal,
+    "terminator": terminator
     "apple_terminal": Apple_terminal,
 }
 
@@ -688,7 +689,7 @@ if os.name == "nt":
             pass
 
 
-terminallist = ["st", "kitty", "alacritty", "xterm", "konsole", "gnome-terminal", "cool-retro-term", "urxvt", "xfce4-terminal", "terminator"]
+terminallist = ["st", "kitty", "alacritty", "xterm", "konsole", "gnome-terminal", "cool-retro-term", "urxvt", "xfce4-terminal"]
 if args.terminal:
     if args.terminal in terminallist:
         termid = args.terminal
